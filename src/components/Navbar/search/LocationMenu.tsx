@@ -1,10 +1,80 @@
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 interface LocationMenuProps {
   onLocationSelect: (location: string) => void;
 }
 
+interface RecentSearch {
+  location: string;
+  timestamp: number;
+}
+
+const EXPIRATION_TIME = 3 * 60 * 60 * 1000; // 3 hours in milliseconds
+const MAX_RECENT_SEARCHES = 5;
+
 const LocationMenu = ({ onLocationSelect }: LocationMenuProps) => {
+  const [recentSearches, setRecentSearches] = useState<string[]>([]);
+
+  useEffect(() => {
+    loadRecentSearches();
+  }, []);
+
+  const loadRecentSearches = () => {
+    const searches = localStorage.getItem("recentLocationSearches");
+    if (searches) {
+      const parsedSearches: RecentSearch[] = JSON.parse(searches);
+      const currentTime = Date.now();
+
+      // Filter out expired searches
+      const validSearches = parsedSearches.filter(
+        (search) => currentTime - search.timestamp < EXPIRATION_TIME
+      );
+
+      setRecentSearches(validSearches.map((search) => search.location));
+
+      // If any searches were expired, update localStorage
+      if (validSearches.length !== parsedSearches.length) {
+        localStorage.setItem(
+          "recentLocationSearches",
+          JSON.stringify(validSearches)
+        );
+      }
+    }
+  };
+
+  const handleLocationSelect = (location: string) => {
+    const currentTime = Date.now();
+    const searches = localStorage.getItem("recentLocationSearches");
+    let recentSearches: RecentSearch[] = searches ? JSON.parse(searches) : [];
+
+    // Filter out expired searches and the selected location if it exists
+    recentSearches = recentSearches.filter(
+      (search) =>
+        currentTime - search.timestamp < EXPIRATION_TIME &&
+        search.location !== location
+    );
+
+    // Add the new search to the beginning
+    recentSearches.unshift({
+      location,
+      timestamp: currentTime,
+    });
+
+    // Keep only the most recent MAX_RECENT_SEARCHES
+    recentSearches = recentSearches.slice(0, MAX_RECENT_SEARCHES);
+
+    // Update localStorage and state
+    localStorage.setItem(
+      "recentLocationSearches",
+      JSON.stringify(recentSearches)
+    );
+    setRecentSearches(recentSearches.map((search) => search.location));
+
+    // Call the original onLocationSelect
+    onLocationSelect(location);
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -10 }}
@@ -35,51 +105,36 @@ const LocationMenu = ({ onLocationSelect }: LocationMenuProps) => {
           display: none;
         }
       `}</style>
-      <div
-        className="w-full p-6 hover:bg-black/5 text-[#222222] text-[14px] rounded-lg cursor-pointer"
-        onClick={() => onLocationSelect("Eldoret")}
-      >
-        Eldoret
-      </div>
-      <div
-        className="w-full p-6 hover:bg-black/5 rounded-lg text-[#222222] text-[14px] cursor-pointer"
-        onClick={() => onLocationSelect("Nairobi")}
-      >
-        Nairobi
-      </div>
-      <div
-        className="w-full p-6 hover:bg-black/5 rounded-lg text-[#222222] text-[14px] cursor-pointer"
-        onClick={() => onLocationSelect("Kitui")}
-      >
-        Kitui
-      </div>
-      <div className="text-[14px] font-semibold p-6 text-[#222222]">
+
+      {recentSearches.length > 0 && (
+        <>
+          <div className="text-sm font-semibold p-5 text-[#222222]">
+            Recent searches
+          </div>
+          {recentSearches.map((location, index) => (
+            <div
+              key={`recent-${location}-${index}`}
+              className="w-full p-5 hover:bg-black/5 text-[#222222] text-[14px] rounded-lg cursor-pointer"
+              onClick={() => handleLocationSelect(location)}
+            >
+              {location}
+            </div>
+          ))}
+        </>
+      )}
+
+      <div className="text-sm font-semibold p-5 text-[#222222]">
         Suggested Locations
       </div>
-      <div
-        className="w-full p-6 hover:bg-black/5 rounded-lg text-[#222222] text-[14px] cursor-pointer"
-        onClick={() => onLocationSelect("Diani")}
-      >
-        Diani
-      </div>
-      <div
-        className="w-full p-6 hover:bg-black/5 rounded-lg text-[#222222] text-[14px] cursor-pointer"
-        onClick={() => onLocationSelect("Nanyuki")}
-      >
-        Nanyuki
-      </div>
-      <div
-        className="w-full p-6 hover:bg-black/5 rounded-lg text-[#222222] text-[14px] cursor-pointer"
-        onClick={() => onLocationSelect("Kilifi")}
-      >
-        Kilifi
-      </div>
-      <div
-        className="w-full p-6 hover:bg-black/5 rounded-lg text-[#222222] text-[14px] cursor-pointer"
-        onClick={() => onLocationSelect("Meru")}
-      >
-        Meru
-      </div>
+      {["Diani", "Nanyuki", "Kilifi", "Meru"].map((location) => (
+        <div
+          key={location}
+          className="w-full p-5 hover:bg-black/5 rounded-lg text-[#222222] text-sm cursor-pointer"
+          onClick={() => handleLocationSelect(location)}
+        >
+          {location}
+        </div>
+      ))}
     </motion.div>
   );
 };
