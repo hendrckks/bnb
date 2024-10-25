@@ -9,7 +9,7 @@ const LargeContainer = ({ children, className }: props) => {
   return (
     <div
       className={twMerge(
-        'mx-auto max-w-[92vw] flex items-center justify-center',
+        'mx-auto max-w-[1700px]',
         className
       )}
     >

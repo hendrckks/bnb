@@ -26,12 +26,12 @@ const Navbar = () => {
       initial={{ height: 100 }}
       animate={{ height: isScrolled ? (searchExpanded ? 96 : 80) : 100 }}
       transition={{ duration: 0.3, ease: "easeInOut" }}
-      className="fixed top-0 left-0 right-0 z-50 border-b border-black/10 backdrop-blur-sm bg-white/90"
+      className="fixed top-0 left-0 right-0 z-50  backdrop-blur-sm bg-white"
     >
-      <LargeContainer className="h-full mx-auto px-6 flex items-center justify-between">
+      <LargeContainer className="h-full mx-auto flex items-center justify-between">
         <motion.div layout className="flex-shrink-0">
           <Link to="/" className="block">
-            <img src="/ventos.png" className="h-6 w-auto" alt="Ventos Logo" />
+            <img src="/ventos (2).png" className="h-5 w-auto" alt="Ventos Logo" />
           </Link>
         </motion.div>
 
