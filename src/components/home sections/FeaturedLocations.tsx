@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AboutSection from "./AboutSection";
 
 const FeaturedLocations = () => {
@@ -43,9 +44,9 @@ const FeaturedLocations = () => {
             Interlaken 101, Nyeri
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 md:mt-10">
-            <button className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
-              Book now
-            </button>
+            <Link to="/contact-us" className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
+              Contact us
+            </Link>
             <button className="w-full sm:w-auto border-2 border-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-[#0a0026] font-semibold text-sm">
               Learn more
             </button>
@@ -93,9 +94,9 @@ const FeaturedLocations = () => {
             Interlaken 102, Nyeri
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 md:mt-10">
-            <button className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
+            <Link to="/contact-us" className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
               Book now
-            </button>
+            </Link>
             <button className="w-full sm:w-auto border-2 border-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-[#0a0026] font-semibold text-sm">
               Learn more
             </button>

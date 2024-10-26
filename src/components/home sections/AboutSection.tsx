@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AboutSection = () => {
   return (
     <div className="py-16 px-8 md:px-16 lg:px-10 flex flex-col md:flex-row h-auto md:h-[720px] w-full bg-[#f3f2ff] rounded-[40px]">
@@ -79,9 +81,9 @@ const AboutSection = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 md:mt-20">
-          <button className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
+          <Link to="/contact-us" className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
             Contact us
-          </button>
+          </Link>
           <button className="w-full sm:w-auto border-2 border-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-[#0a0026] font-semibold text-sm">
             Learn more
           </button>
