@@ -33,14 +33,14 @@ const Footer = () => {
             >
               Home
             </Link>
-            <a
-              href="#"
+            <Link
+              to="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Locations
-            </a>
+            </Link>
             <Link
-              to="#"
+              to="/about"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               About us

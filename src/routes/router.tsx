@@ -6,6 +6,7 @@ import ProtectedRoute from "./ProtectedRoute";
 import ProfilePage from "../app/pages/ProfilePage";
 import Faq from "../app/pages/Faq";
 import ContactPage from "../app/pages/Contact";
+import About from "../app/pages/About";
 // import ProfilePage from "../app/pages/ProfilePage";
 // import ProtectedRoute from "./ProtectedRoute";
 
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact-us",
         element: <ContactPage />,
+      },
+      {
+        path: "/about",
+        element: <About />,
       },
       {
         path: "/profile",
