@@ -40,7 +40,7 @@ const FeaturedLocations = () => {
             Wi-fi
           </div>
           <div className="border border-b-black/50 border-transparent text-[#575757] font-semibold p-4 md:p-6 text-sm">
-            Interlaken 101, Switzerland
+            Interlaken 101, Nyeri
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 md:mt-10">
             <button className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
@@ -90,7 +90,7 @@ const FeaturedLocations = () => {
             Wi-fi
           </div>
           <div className="border border-b-black/50 border-transparent text-[#575757] font-semibold p-4 md:p-6 text-sm">
-            Interlaken 102, Switzerland
+            Interlaken 102, Nyeri
           </div>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 md:mt-10">
             <button className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
