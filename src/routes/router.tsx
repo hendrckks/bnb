@@ -5,6 +5,7 @@ import Home from "../app/pages/Home";
 import ProtectedRoute from "./ProtectedRoute";
 import ProfilePage from "../app/pages/ProfilePage";
 import Faq from "../app/pages/Faq";
+import ContactPage from "../app/pages/Contact";
 // import ProfilePage from "../app/pages/ProfilePage";
 // import ProtectedRoute from "./ProtectedRoute";
 
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
       {
         path: "/faq",
         element: <Faq />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactPage />,
       },
       {
         path: "/profile",

@@ -52,7 +52,7 @@ const Footer = () => {
               FAQ
             </Link>
             <Link
-              to="#"
+              to="/contact-us"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Contact
