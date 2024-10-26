@@ -40,7 +40,6 @@ const initialValidationErrors: ValidationErrors = {
 };
 
 export default function AuthPopup() {
-  // const [isOpen, setIsOpen] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
   const [isResetPassword, setIsResetPassword] = useState(false);
   const [formData, setFormData] = useState<AuthFormData>(initialFormData);
@@ -51,15 +50,18 @@ export default function AuthPopup() {
   const [success, setSuccess] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [touchedFields, setTouchedFields] = useState<Set<string>>(new Set());
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const { showAuthModal: isOpen, setShowAuthModal: setIsOpen, authFormType } = useAuth();  const location = useLocation();
+  const {
+    showAuthModal: isOpen,
+    setShowAuthModal: setIsOpen,
+    authFormType,
+  } = useAuth();
+  const location = useLocation();
   const navigate = useNavigate();
-  // const modalRef = useRef<HTMLDivElement>(null);
   const formId = useRef(`auth-form-${Math.random().toString(36).substr(2, 9)}`);
 
   useEffect(() => {
     // Set the initial form type based on authFormType from context
-    setIsSignUp(authFormType === 'signup');
+    setIsSignUp(authFormType === "signup");
   }, [authFormType]);
 
   useEffect(() => {
@@ -150,7 +152,6 @@ export default function AuthPopup() {
 
   const handleEmailSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
     setError(null);
     setSuccess(null);
     setValidationErrors(initialValidationErrors);
@@ -223,7 +224,6 @@ export default function AuthPopup() {
 
   const handleEmailSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
     setError(null);
     setSuccess(null);
     setValidationErrors(initialValidationErrors);
@@ -318,7 +318,6 @@ export default function AuthPopup() {
     setValidationErrors(initialValidationErrors);
     setIsResetPassword(false);
     setIsSignUp(false);
-    setIsSubmitted(false);
     setTouchedFields(new Set());
   };
 
