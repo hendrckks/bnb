@@ -96,7 +96,7 @@ const Footer = () => {
       <div className="border-t border-gray-700 w-full px-6 md:px-20 lg:px-32 xl:px-96 py-4">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
           <div className="text-white md:text-sm text-xs text-cente font-semibold md:text-left">
-            © 2024 built by Devscook LLC. All rights reserved.
+            © 2024 Built by Devscook LLC. All rights reserved.
           </div>
           <div className="flex flex-wrap justify-center md:justify-end gap-4 text-white md:text-sm text-xs">
             <a href="#" className="hover:text-gray-300">
