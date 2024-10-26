@@ -28,7 +28,7 @@ const Footer = () => {
           <h3 className="text-white font-semibold mb-2">Navigation</h3>
           <div className="flex flex-col gap-3 md:gap-4">
             <Link
-              to="#"
+              to="/"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Home
