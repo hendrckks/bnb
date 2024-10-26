@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div className="min-h-[50vh] w-full bg-gradient-to-br from-[#001126] to-[#404c5f] relative">
@@ -25,36 +27,36 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <h3 className="text-white font-semibold mb-2">Navigation</h3>
           <div className="flex flex-col gap-3 md:gap-4">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Home
-            </a>
+            </Link>
             <a
               href="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Locations
             </a>
-            <a
-              href="#"
+            <Link
+              to="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               About us
-            </a>
-            <a
-              href="/faq"
+            </Link>
+            <Link
+              to="/faq"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               FAQ
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -62,30 +64,30 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <h3 className="text-white font-semibold mb-2">Social media</h3>
           <div className="flex flex-col gap-3 md:gap-4">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               X/Twitter
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Youtube
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Instagram
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Threads
-            </a>
+            </Link>
           </div>
         </div>
       </div>
