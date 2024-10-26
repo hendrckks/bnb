@@ -166,7 +166,7 @@ const AnimatedSearch = ({
               <div className="relative flex items-center justify-center">
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-6 bg-black/30"></div>
                 <div className="cursor-pointer text-sm text-black/60">
-                  <span className="text-black/90">
+                  <span className="text-black/90 font-medium">
                     {selectedLocation || "Location"}
                   </span>
                 </div>
@@ -174,7 +174,7 @@ const AnimatedSearch = ({
               <div className="relative flex items-center justify-center">
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-6 bg-black/30"></div>
                 <div className="text-sm cursor-pointer text-black/60">
-                  <span className="text-black/90">Anytime</span>
+                  <span className="text-black/90 font-medium">Anytime</span>
                 </div>
               </div>
               <div className="flex items-center justify-center cursor-pointer">
