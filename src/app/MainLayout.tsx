@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import AuthPopup from "../components/authmodals/AuthModal";
 import { useAuth } from "../context/AuthContext";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer";
 
 const MainLayout = () => {
   const { showAuthModal } = useAuth();
@@ -13,6 +14,7 @@ const MainLayout = () => {
         <Outlet />
       </main>
       {showAuthModal && <AuthPopup />}
+      <Footer />
     </div>
   );
 };
