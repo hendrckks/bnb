@@ -5,33 +5,33 @@ export interface FAQ {
 
 export const faqData: FAQ[] = [
   {
-    question: 'What’s Devscook’s delivery process?',
+    question: 'How does your booking process work?',
     answer:
-      'Devscook’s process is simple and collaborative. It begins with a kickoff call to understand your goals and inspiration. Then, you provide feedback while we handle the rest.             We update you every two days through written messages or Loom videos, depending on the topic, and are always available for a chat.',
+      'Our booking process is seamless and personalized. It starts with a consultation call where we understand your preferences, desired location, and requirements. Then, our luxury home specialists curate a selection of properties that match your criteria. We handle all the arrangements, from booking to concierge services, ensuring a stress-free experience.',
   },
   {
-    question: 'Why wouldn’t I just hire a full-time designer?',
+    question: 'Why book through us instead of directly with property owners?',
     answer:
-      'They’re way more expensive and harder to manage. A senior-level designer like the ones at Devscook will easily cost you upwards of $100k, require benefits, vacation days, etc. It all adds up!',
+      'We personally verify and inspect each property in our portfolio to ensure it meets our luxury standards. Plus, our clients get exclusive perks, 24/7 concierge support, and often better rates due to our partnerships. We also handle any issues that may arise during your stay, giving you peace of mind.',
   },
   {
-    question: 'How does pausing work?',
+    question: 'What is your cancellation policy?',
     answer:
-      "You can pause your subscription at any time. During the pause, you won't be charged, and you can resume when you need design work again.",
+      'Our standard cancellation policy allows full refunds up to 60 days before check-in, 50% refund up to 30 days before check-in. However, policies may vary for specific properties and peak seasons. We also offer premium travel insurance options for additional flexibility.',
   },
   {
-    question: 'What is the software stack?',
+    question: 'What amenities can I expect in your luxury properties?',
     answer:
-      'We use industry-standard design tools such as Adobe Creative Suite and Figma.',
+      'All our properties feature high-end furnishings, fully equipped gourmet kitchens, and premium bedding. Many include private pools, home theaters, and smart home technology. We can also arrange additional services like private chefs, housekeeping, and local experiences.',
   },
   {
-    question: 'What if I’m not happy with my designs?',
+    question: 'What if the property doesnʼt meet my expectations upon arrival?',
     answer:
-      "How dare you! Just kidding. You can send it back to the kitchen and we'll keep revising until it's exactly what you're looking for.",
+      'Your satisfaction is our priority. If a property doesnʼt meet our promised standards, our 24/7 concierge team will immediately work to resolve any issues or relocate you to an equivalent or upgraded property at no additional cost.',
   },
   {
-    question: 'Can we have calls?',
+    question: 'Can you help with travel arrangements and local experiences?',
     answer:
-      'Absolutely! You can book an intro call to discuss potential projects anytime. Each project starts with a kickoff call.We offer strategy calls as needed, but prefer to let designers focus on their work. Depending on the topic, you might meet only with the project lead.',
+      'Absolutely! Our concierge service can arrange everything from airport transfers to exclusive local experiences. Whether you need restaurant reservations, private tours, yacht charters, or in-house wellness services, weʼll take care of all the details for a truly memorable stay.',
   },
 ];
