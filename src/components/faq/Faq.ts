@@ -7,7 +7,7 @@ export const faqData: FAQ[] = [
   {
     question: 'How does your booking process work?',
     answer:
-      'Our booking process is seamless and personalized. It starts with a consultation call where we understand your preferences, desired location, and requirements. Then, our luxury home specialists curate a selection of properties that match your criteria. We handle all the arrangements, from booking to concierge services, ensuring a stress-free experience.',
+      'Our booking process is seamless and personalized . It starts with a consultation call where we understand your preferences, desired location, and requirements. Then, our luxury home specialists curate a selection of properties that match your criteria. We handle all the arrangements, from booking to concierge services, ensuring a stress-free experience.',
   },
   {
     question: 'Why book through us instead of directly with property owners?',
