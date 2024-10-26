@@ -10,7 +10,7 @@ const Faq: React.FC = () => {
       <SmallContainer className="flex flex-col md:px-0 px-4 mt-20 item-center">
         <div className="flex flex-col self-start px-5 text-start">
           <h1 className="text-start md:text-4xl text-3xl text-[#131211] font-semibold">
-            FAQ
+            FAQs
           </h1>
           <h2 className="md:text-4xl text-3xl mt-5 font-medium text-[#131211]">
             Got any questions?
