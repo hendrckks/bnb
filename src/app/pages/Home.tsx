@@ -2,7 +2,7 @@ import Locations from "../../components/home sections/Locations";
 
 const Home = () => {
   return (
-    <div className="min-h-screen w-full px-2 sm:px-4 py-4 sm:py-8">
+    <div className="min-h-screen  scroll-smooth w-full px-2 sm:px-4 py-4 sm:py-8">
       <div
         className="w-full max-w-[1700px] mx-auto rounded-xl sm:rounded-3xl overflow-hidden relative h-[400px] sm:h-[600px] md:h-[800px] bg-cover bg-center"
         style={{

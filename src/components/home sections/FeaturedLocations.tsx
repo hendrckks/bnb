@@ -46,7 +46,7 @@ const FeaturedLocations = () => {
             <button className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
               Book now
             </button>
-            <button className="w-full sm:w-auto border border-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-[#0a0026] font-semibold text-sm">
+            <button className="w-full sm:w-auto border-2 border-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-[#0a0026] font-semibold text-sm">
               Learn more
             </button>
           </div>
@@ -96,7 +96,7 @@ const FeaturedLocations = () => {
             <button className="w-full sm:w-auto bg-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-white font-semibold text-sm">
               Book now
             </button>
-            <button className="w-full sm:w-auto border border-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-[#0a0026] font-semibold text-sm">
+            <button className="w-full sm:w-auto border-2 border-[#0a0026] py-3 md:py-4 px-6 md:px-8 rounded-full text-[#0a0026] font-semibold text-sm">
               Learn more
             </button>
           </div>
