@@ -44,7 +44,7 @@ const Footer = () => {
               About us
             </a>
             <a
-              href="#"
+              href="/faq"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               FAQ
