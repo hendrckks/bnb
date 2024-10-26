@@ -1,4 +1,3 @@
-import AboutSection from "../../components/home sections/AboutSection";
 import Locations from "../../components/home sections/Locations";
 
 const Home = () => {

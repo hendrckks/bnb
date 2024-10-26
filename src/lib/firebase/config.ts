@@ -27,6 +27,6 @@ const config: FirebaseOptions = {
   measurementId: result.data.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
-export const SESSION_DURATION = 30 * 60 * 1000;
+export const SESSION_DURATION = 2 * 60 * 1000;
 
 export const firebaseConfig = config;

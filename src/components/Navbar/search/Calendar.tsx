@@ -19,13 +19,6 @@ const Calendar = ({
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [direction, setDirection] = useState(0);
 
-  const formatDate = (date: Date): string => {
-    return new Intl.DateTimeFormat("en-US", {
-      day: "numeric",
-      month: "short",
-    }).format(date);
-  };
-
   const getDaysInMonth = (date: Date): number => {
     return new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
   };
