@@ -19,7 +19,7 @@ const Home = () => {
             <p className="text-white/80 md:text-base text-sm mb-4 sm:mb-6">
               Award-winning resorts in Swiss alps.
             </p>
-            <button className="bg-white text-black font-semibold text-sm px-6 sm:px-8 py-2.5 sm:py-3 rounded-full w-fit hover:bg-white/90 transition-colors">
+            <button className="bg-white text-black font-medium text-sm px-6 sm:px-8 py-2.5 sm:py-3 rounded-full w-fit hover:bg-white/90 transition-colors">
               Explore & Book
             </button>
           </div>
