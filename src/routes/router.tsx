@@ -7,6 +7,7 @@ import ProfilePage from "../app/pages/ProfilePage";
 import Faq from "../app/pages/Faq";
 import ContactPage from "../app/pages/Contact";
 import About from "../app/pages/About";
+import ListingsPage from "../app/pages/ListingsPage";
 // import ProfilePage from "../app/pages/ProfilePage";
 // import ProtectedRoute from "./ProtectedRoute";
 
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/s",
+        element: <ListingsPage />,
       },
       {
         path: "/profile",
