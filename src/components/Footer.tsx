@@ -33,12 +33,12 @@ const Footer = () => {
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               to="#"
               className="text-white hover:text-gray-300 text-sm md:text-base"
             >
               Locations
-            </Link>
+            </Link> */}
             <Link
               to="/about"
               className="text-white hover:text-gray-300 text-sm md:text-base"
