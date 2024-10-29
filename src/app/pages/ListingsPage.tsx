@@ -14,11 +14,13 @@ const ListingsPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen py-20 px-6">
+    <div className="min-h-screen py-10 md:py-20 px-4 md:px-6">
       <div className="mb-5">
-        35 results in <span className="font-medium">Nakuru </span>
+        <span className="text-sm md:text-base">
+          35 results in <span className="font-medium">Nakuru</span>
+        </span>
       </div>
-      <div className="grid grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4 md:gap-6">
         <ListingCard
           imageUrl="featured1.jpg"
           title="Tiny home in Nakuru"
