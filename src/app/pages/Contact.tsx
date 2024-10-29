@@ -31,7 +31,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-36">
+    <div className="max-w-6xl mx-auto px-4 py-28">
       <h1 className="text-4xl font-semibold mb-4">Contact us</h1>
       <p className="text-gray-600 mb-8">
         Reach out to us if you have any further questions.

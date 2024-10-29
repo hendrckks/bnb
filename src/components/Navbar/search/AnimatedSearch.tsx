@@ -206,7 +206,7 @@ const AnimatedSearch = ({
                 <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[1px] h-6 bg-black/30"></div>
                 <div className="cursor-pointer text-sm font-semibold text-black/60 w-full">
                   <div className="flex flex-col justify-center items-start p-2">
-                    <span className="text-black/80 font-medium text-xs">
+                    <span className="text-black font-medium text-xs">
                       Where
                     </span>
                     <div className="relative w-full flex items-center">
